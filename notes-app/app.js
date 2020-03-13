@@ -1,3 +1,8 @@
-const notes = require('./notes.js');
+const chalk = require('chalk');
+const getNotes = require('./notes.js');
 
-console.log(notes());
+const msg = getNotes();
+console.log(msg);
+
+const greenMsg = chalk.blue.inverse.bold('Success!')
+console.log(greenMsg);
